@@ -1,12 +1,12 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 
 const Paymentsuccess = () => {
   const navigate = useNavigate();
 
   const handleGoToOrders = () => {
-    navigate('/orderdetails'); // Navigate to the orders page or any other page you want
+    navigate('/orderdetails'); 
   };
 
   return (

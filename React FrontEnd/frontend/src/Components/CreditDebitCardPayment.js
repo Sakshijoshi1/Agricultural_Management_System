@@ -9,7 +9,7 @@ const CreditDebitCardPayment = () => {
   const [cvv, setCvv] = useState('');
 
   const handlePayment = () => {
-    // Implement payment logic here
+    
     console.log(`Processing credit/debit card payment for order ID: ${orderId}`);
     console.log(`Card Number: ${cardNumber}, Expiry Date: ${expiryDate}, CVV: ${cvv}`);
   };

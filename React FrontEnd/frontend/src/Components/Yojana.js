@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 
 const Yojana = () => {
   const [yojanas, setYojanas] = useState([]);
@@ -8,7 +8,7 @@ const Yojana = () => {
 
   useEffect(() => {
     console.log('Fetching yojanas...');
-    fetch('http://localhost:4444/user/yojna') // Ensure the API endpoint is correct
+    fetch('http://localhost:4444/user/yojna') 
       .then(response => {
         console.log('Received response:', response);
         if (!response.ok) {
@@ -29,7 +29,7 @@ const Yojana = () => {
   }, []);
 
   const handleYojanaClick = (yojana) => {
-    // Replace the URL with the actual Google Form link
+    
     const googleFormUrl = 'https://pmkisan.gov.in/';
     window.open(googleFormUrl, '_blank');
   };

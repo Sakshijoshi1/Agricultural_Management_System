@@ -10,7 +10,7 @@ const SearchResults = () => {
 
   useEffect(() => {
     console.log('Fetching search results...');
-    const token = sessionStorage.getItem('token'); // Replace 'authToken' with your actual token key
+    const token = sessionStorage.getItem('token'); 
     fetch(`http://localhost:4444/user/product/search?query=${query}`, {
       method: 'GET',
       headers: {
